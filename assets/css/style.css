@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: url(../images/background.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.header {
+    max-width: 1000px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background-color: #ffffff1c;
+
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.header-link,
+.header-logo {
+    text-decoration: none;
+    color: #fff;
+
+}
