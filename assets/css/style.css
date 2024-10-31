@@ -18,7 +18,6 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-
 }
 
 .header {
@@ -31,7 +30,7 @@ body {
     border-radius: 10px;
     backdrop-filter: blur(10px);
     background-color: #ffffff1c;
-
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .header-list {
@@ -58,38 +57,59 @@ body {
     background: white;
     transition: width 0.3s;
 }
+
 .header-link:hover::after{
     width: 100%;
 }
+
 .banner {
     position: relative;
-    max-width: 1000px;
-    margin: 0 auto;
     color: white;
-    min-height: 80dvh;
     margin-top: 50px;
-
+    padding: 30px;
 }
+
 .banner-bg{
     background-image: url(../images/cohete.png);
     position: absolute;
     width: 100%;
-    height: 80dvh;
+    height: 1200px;
     background-size: cover;
-    background-position: right;
+    background-position: left;
+    background-repeat: no-repeat;
     right: 0;
-    top: -100px;
-
+    z-index: -1;
+    bottom: 0;
 }
+
+.banner-bg::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.banner article {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .banner article h1{
     font-size: 60px;
-    margin-bottom: 30px;
-    width: 600px;
+    margin-bottom: 40px;
+    width: 700px;
 }
+
 .banner article p{
-    margin-bottom: 30px;
-    width: 600px;
+    font-size: 25px;
+    margin-bottom: 40px;
+    width: 700px;
 }
+
 .banner article button {
     backdrop-filter: blur(10px);
     background: transparent;
@@ -100,6 +120,7 @@ body {
     font-weight: bold;
     color:white
 }
+
 .container{
     width: 100%;
 
